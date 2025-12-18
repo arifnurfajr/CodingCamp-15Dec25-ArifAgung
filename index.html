@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEAST DAO</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body id="top">
+
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="brand">
+        <img src="./assets/logo.png" alt="BEAST DAO logo" class="brand__logo" />
+        <span class="brand__name">BEAST DAO</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary Navigation">
+        <ul class="nav__list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#profile">Our Profile</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#message">Message Us</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HOME ===== -->
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1>Hi <span id="displayName"></span>, Welcome To Website</h1>
+          <p>Official website of BEAST DAO, building education, tools, and data-driven solutions.</p>
+        </div>
+
+        <div class="hero__banner">
+          <img src="./assets/hero-banner.jpg" alt="BEAST DAO hero banner" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR HEADQUARTER ===== -->
+    <section id="headquarter" class="hq">
+      <div class="container">
+        <h2>Our Headquarter</h2>
+
+        <div class="hq__grid">
+          <div class="hq__item">
+            <div class="hq__circle">
+              <img src="./assets/hq-jakarta.jpg" alt="Jakarta Headquarter" />
+            </div>
+            <p>Jakarta</p>
+          </div>
+
+          <div class="hq__item">
+            <div class="hq__circle">
+              <img src="./assets/hq-bandung.jpg" alt="Bandung Headquarter" />
+            </div>
+            <p>Bandung</p>
+          </div>
+
+          <div class="hq__item">
+            <div class="hq__circle">
+              <img src="./assets/hq-surabaya.jpg" alt="Surabaya Headquarter" />
+            </div>
+            <p>Surabaya</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR PROFILE ===== -->
+    <section id="profile" class="profile">
+      <div class="container">
+        <h2>Our Profile</h2>
+
+        <div class="profile__banner">
+          <img src="./assets/profile-banner.jpg" alt="BEAST DAO company profile banner" />
+        </div>
+
+        <div class="profile__content">
+          <article class="profile__card">
+            <h3>About the Company</h3>
+            <p>
+              BEAST DAO is a decentralized community focused on education, analytics,
+              and innovation in the Web3 ecosystem.
+            </p>
+          </article>
+
+          <article class="profile__card">
+            <h3>Vision</h3>
+            <p>
+              To empower individuals and communities through transparent,
+              data-driven, and decentralized solutions.
+            </p>
+          </article>
+
+          <article class="profile__card">
+            <h3>Mission</h3>
+            <ul>
+              <li>Provide accessible Web3 education for all levels</li>
+              <li>Develop tools that support informed decision-making</li>
+              <li>Build an open and collaborative DAO ecosystem</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PORTFOLIO ===== -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <h2>Portfolio</h2>
+
+        <div class="portfolio__grid">
+          <article class="portfolio__item">
+            <div class="portfolio__thumb">
+              <img src="./assets/portfolio-web3.jpg" alt="BEAST Web3 Academy" />
+            </div>
+            <h3>BEAST Web3 Academy</h3>
+            <p>Platform edukasi Web3 yang menyediakan materi blockchain, DAO, dan teknologi terdesentralisasi.</p>
+          </article>
+
+          <article class="portfolio__item">
+            <div class="portfolio__thumb">
+              <img src="./assets/portfolio-trading.jpg" alt="BEAST Trading Lab" />
+            </div>
+            <h3>BEAST Trading Lab</h3>
+            <p>Ruang belajar trading berbasis data untuk memahami market, strategi, dan manajemen risiko.</p>
+          </article>
+
+          <article class="portfolio__item">
+            <div class="portfolio__thumb">
+              <img src="./assets/portfolio-analytics.jpg" alt="BEAST Analytics Suite" />
+            </div>
+            <h3>BEAST Analytics Suite</h3>
+            <p>Alat analitik untuk memantau performa aset, aktivitas DAO, dan data on-chain.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MESSAGE US ===== -->
+    <section id="message" class="message">
+      <div class="container">
+        <h2>Message Us</h2>
+
+        <div class="message__layout">
+          <form id="messageForm" class="form" novalidate>
+            <div class="form__group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+              <small id="errorName"></small>
+            </div>
+
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+              <small id="errorEmail"></small>
+            </div>
+
+            <div class="form__group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+              <small id="errorPhone"></small>
+            </div>
+
+            <div class="form__group">
+              <label for="messageText">Message</label>
+              <textarea id="messageText" name="messageText" rows="5"></textarea>
+              <small id="errorMessage"></small>
+            </div>
+
+            <button type="submit">Submit</button>
+          </form>
+
+          <aside class="output" aria-live="polite">
+            <h3>Your Submitted Data</h3>
+            <p><strong>Current time:</strong> <span id="outTime">-</span></p>
+            <p><strong>Name:</strong> <span id="outName">-</span></p>
+            <p><strong>Email:</strong> <span id="outEmail">-</span></p>
+            <p><strong>Phone:</strong> <span id="outPhone">-</span></p>
+            <p><strong>Message:</strong> <span id="outMessage">-</span></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© BEAST DAO</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
